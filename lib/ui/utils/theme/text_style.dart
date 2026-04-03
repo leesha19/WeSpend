@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wespend/framework/utils/extension/screenutil_extension.dart';
 import 'package:wespend/ui/utils/theme/app_colors.dart';
 
 class TextStyles {
@@ -19,56 +20,56 @@ class TextStyles {
 
   static TextStyle get thin => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwThin,
     fontFamily: fontFamily,
   );
 
   static TextStyle get extraLight => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwExtraLight,
     fontFamily: fontFamily,
   );
 
   static TextStyle get light => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwLight,
     fontFamily: fontFamily,
   );
 
   static TextStyle get regular => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwRegular,
     fontFamily: fontFamily,
   );
 
   static TextStyle get medium => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwMedium,
     fontFamily: fontFamily,
   );
 
   static TextStyle get semiBold => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwSemiBold,
     fontFamily: fontFamily,
   );
 
   static TextStyle get bold => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwBold,
     fontFamily: fontFamily,
   );
 
   static TextStyle get extraBold => TextStyle(
     color: AppColors.textMainFontByTheme(),
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: fwExtraBold,
     fontFamily: fontFamily,
   );

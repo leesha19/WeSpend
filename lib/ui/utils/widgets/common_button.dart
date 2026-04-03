@@ -1,6 +1,7 @@
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:wespend/framework/utils/extension/context_extension.dart';
 import 'package:wespend/framework/utils/extension/extension.dart';
+import 'package:wespend/framework/utils/extension/screenutil_extension.dart';
 import 'package:wespend/ui/utils/theme/theme.dart';
 import 'package:wespend/ui/utils/widgets/common_svg.dart';
 import 'dart:async';
@@ -96,8 +97,8 @@ class CommonButton extends StatelessWidget {
       child: AbsorbPointer(
         absorbing: isLoading ?? false,
         child: Container(
-          height: height ,
-          width: width ?? double.infinity,
+          height: height?.h ,
+          width: width?.w ?? double.infinity,
           decoration: BoxDecoration(
             gradient: isGradient == true ? const LinearGradient(
               colors: [
@@ -107,6 +108,16 @@ class CommonButton extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ) : null,
+            boxShadow: isGradient == true
+                ? [
+              BoxShadow(
+                color: const Color(0xFF7B5CF0).withOpacity(0.5),
+                blurRadius: 10.r,
+                spreadRadius: 1,
+                offset: const Offset(0, 2),
+              ),
+            ]
+                : [],
             color: isGradient == true ? null : (backgroundColor ?? AppColors.primary),
             borderRadius: borderRadius ?? BorderRadius.circular(9),
             border: Border.all(

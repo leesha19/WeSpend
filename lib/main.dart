@@ -5,9 +5,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:wespend/framework/dependency_injection/inject.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:wespend/ui/routing/app_router.dart';
-import 'package:wespend/ui/routing/delegate.dart';
-import 'package:wespend/ui/routing/parser.dart';
-import 'package:wespend/ui/routing/stack.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wespend/ui/utils/app_constants.dart';
 
 
@@ -55,20 +53,26 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-        debugShowCheckedModeBanner: false,
-        title: AppConstants.appName,
-        theme: ThemeData(
-          highlightColor: Colors.transparent,
-          splashColor: Colors.transparent,
-          hoverColor: Colors.transparent,
-          scaffoldBackgroundColor: const Color(0xFF0D0A1E),
-        ),
-        supportedLocales: EasyLocalization.of(context)!.supportedLocales,
-        // scrollBehavior: NoThumbScrollBehavior().copyWith(scrollbars: false),
-        localizationsDelegates: context.localizationDelegates,
-        locale: EasyLocalization.of(context)!.locale,
-        routerConfig: appRouter
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+        builder: (context, child){
+          return MaterialApp.router(
+              debugShowCheckedModeBanner: false,
+              title: AppConstants.appName,
+              theme: ThemeData(
+                highlightColor: Colors.transparent,
+                splashColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                scaffoldBackgroundColor: const Color(0xFF0D0A1E),
+              ),
+              supportedLocales: EasyLocalization.of(context)!.supportedLocales,
+              // scrollBehavior: NoThumbScrollBehavior().copyWith(scrollbars: false),
+              localizationsDelegates: context.localizationDelegates,
+              locale: EasyLocalization.of(context)!.locale,
+              routerConfig: appRouter
+
+          );
+        }
 
     );
   }

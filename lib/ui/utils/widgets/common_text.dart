@@ -1,3 +1,4 @@
+import 'package:wespend/framework/utils/extension/screenutil_extension.dart';
 import 'package:wespend/ui/utils/theme/theme.dart';
 
 class CommonText extends StatelessWidget {
@@ -28,7 +29,7 @@ class CommonText extends StatelessWidget {
           TextStyle(
             fontFamily: TextStyles.fontFamily,
             fontWeight: fontWeight ?? TextStyles.fwRegular,
-            fontSize: fontSize ?? 14,
+            fontSize: (fontSize ?? 14).sp,
             color: clrFont ?? Colors.white,
             fontStyle: fontStyle ?? FontStyle.normal,
             decorationColor: clrFont ?? Colors.black,

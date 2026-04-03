@@ -7,7 +7,9 @@ class  AppColors {
 
   static const bg = Color(0xFF0D0A1E);
   static const card = Color(0xFF1A1333);
+  static const clrFF1A1625 = Color(0xFF1A1625);
   static const primary = Color(0xFF7B5CF0);
+  static const clr261861 = Color(0xFF261861);
   static const secondary = Color(0xFF9D7BF8);
   static const accent = Color(0xFFB99EFF);
 
@@ -340,7 +342,7 @@ class  AppColors {
 
   static Color textByTheme() => isDarkMode ? white : primary;
 
-  static Color textMainFontByTheme() => isDarkMode ? white : textPrimary;
+  static Color textMainFontByTheme() => white;
 
   static Color scaffoldBGByTheme() => isDarkMode ? black : scaffoldBG;
 
