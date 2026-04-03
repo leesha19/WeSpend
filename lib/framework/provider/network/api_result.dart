@@ -1,5 +1,6 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:wespend/framework/provider/network/network_exceptions.dart';
 
 part 'api_result.freezed.dart';
 

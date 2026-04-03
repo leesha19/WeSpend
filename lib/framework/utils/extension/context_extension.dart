@@ -12,9 +12,7 @@ extension ContextExtension on BuildContext {
 
   void get nextField => FocusScope.of(this).nextFocus();
 
-  double get width => ZoomAware.zoomAware.fixedWidth;
 
-  double get height => ZoomAware.zoomAware.fixedHeight;
 
   void showSnackBar(String message) {
     ScaffoldMessenger.of(this).showSnackBar(

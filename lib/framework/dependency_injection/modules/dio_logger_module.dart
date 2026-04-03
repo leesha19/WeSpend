@@ -1,3 +1,5 @@
+import 'package:wespend/framework/dependency_injection/inject.dart';
+import 'package:wespend/framework/provider/network/dio/dio_logger.dart';
 import 'package:injectable/injectable.dart';
 
 @module

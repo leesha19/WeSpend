@@ -3,7 +3,10 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive/hive.dart';
-
+import 'package:wespend/framework/provider/network/api_end_points.dart';
+import 'package:wespend/ui/routing/navigation_stack_item.dart';
+import 'package:wespend/ui/routing/stack.dart';
+import 'package:wespend/ui/utils/app_constants.dart';
 
 const String keyRoleType = 'keyRoleType';
 const String keyEntityUuid = 'keyEntityUuid';
@@ -133,36 +136,36 @@ class Session {
   // }
 
   ///Session Logout
-  static Future sessionLogout(WidgetRef ref, BuildContext context) async {
-    String appLanguageUUid = getAppLanguage();
-    ref.read(loginController).disposeController(isNotify: true);
-
-    if(Session.deviceId.isNotEmpty){
-      await ref.read(loginController).logoutApi(context).then((value) async {
-        if(value.success?.status == ApiEndPoints.apiStatus_200){
-          await Session.sessionBox.clear().then((value) {
-
-            Session.saveLocalData(keyAppLanguage, appLanguageUUid);
-            showLog('appLanguageUUid : ${Session.getAppLanguage()}');
-
-            showLog('===========================YOU LOGGED OUT FROM THE APP==============================');
-            Router.neglect(context, (){
-              ref.read(navigationStackController).pushAndRemoveAll( const NavigationStackItem.login());
-            });
-
-          });
-        }
-      },);
-    }
-    else{
-      await Session.sessionBox.clear().then((value) {
-        Session.saveLocalData(keyAppLanguage, appLanguageUUid);
-
-        Router.neglect(context, (){
-          ref.read(navigationStackController).pushAndRemoveAll( const NavigationStackItem.login());
-        });
-      });
-    }
-  }
+  // static Future sessionLogout(WidgetRef ref, BuildContext context) async {
+  //   String appLanguageUUid = getAppLanguage();
+  //   ref.read(loginController).disposeController(isNotify: true);
+  //
+  //   if(Session.deviceId.isNotEmpty){
+  //     await ref.read(loginController).logoutApi(context).then((value) async {
+  //       if(value.success?.status == ApiEndPoints.apiStatus_200){
+  //         await Session.sessionBox.clear().then((value) {
+  //
+  //           Session.saveLocalData(keyAppLanguage, appLanguageUUid);
+  //           showLog('appLanguageUUid : ${Session.getAppLanguage()}');
+  //
+  //           showLog('===========================YOU LOGGED OUT FROM THE APP==============================');
+  //           Router.neglect(context, (){
+  //             ref.read(navigationStackController).pushAndRemoveAll( const NavigationStackItem.login());
+  //           });
+  //
+  //         });
+  //       }
+  //     },);
+  //   }
+  //   else{
+  //     await Session.sessionBox.clear().then((value) {
+  //       Session.saveLocalData(keyAppLanguage, appLanguageUUid);
+  //
+  //       Router.neglect(context, (){
+  //         ref.read(navigationStackController).pushAndRemoveAll( const NavigationStackItem.login());
+  //       });
+  //     });
+  //   }
+  // }
 
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
+import 'package:wespend/framework/utils/extension/string_extension.dart';
+import 'package:wespend/ui/utils/app_constants.dart';
+import 'package:wespend/ui/utils/theme/app_strings.g.dart';
 
 String? validateText(String? value, String error, {int? minLength}) {
   if (value == null || value.trim().isEmpty || value.trim().length < (minLength ?? 1)) {
@@ -8,6 +10,24 @@ String? validateText(String? value, String error, {int? minLength}) {
   } else {
     return null;
   }
+}
+
+String? validateSafetyRating(String? value) {
+  if (value == null || value.trim().isEmpty) {
+    return 'Safety rating is required';
+  }
+
+  final rating = double.tryParse(value);
+
+  if (rating == null) {
+    return 'Enter a valid number';
+  }
+
+  if (rating < 0 || rating > 5) {
+    return 'Safety rating must be between 0 and 5';
+  }
+
+  return null;
 }
 
 String? validateTextPreventSpecialCharacters(String? value, String error, {int? minLength}) {
@@ -371,60 +391,6 @@ String? validateChangePassword(String? value) {
   } else {
     return null;
   }
-}
-
-String? validateComparePrice(String price, WidgetRef ref, bool isMinPrice) {
-  final vehicleRead = ref.read(addEditVehicleController);
-
-  final currentValue = double.tryParse(price);
-  if (currentValue == null) return 'Invalid price';
-  if (currentValue == 0) return 'Price can’t be zero';
-
-  final minValue = isMinPrice
-      ? currentValue
-      : double.tryParse(vehicleRead.minExShowroomPriceController.text);
-
-  final maxValue = isMinPrice
-      ? double.tryParse(vehicleRead.maxExShowroomPriceController.text)
-      : currentValue;
-
-  if (minValue == null || maxValue == null) {
-    showLog('null value min $minValue max $maxValue');
-    return null;
-  }
-
-  if (minValue > maxValue) {
-    return isMinPrice
-        ? 'Min Ex-showroom Price can’t be greater than Max Ex-showroom Price'
-        : 'Max Ex-showroom Price can’t be smaller than Min Ex-showroom Price';
-  }
-
-  return null;
-}
-
-String? validateCompareMileage(String mileage, WidgetRef ref, bool isMinMileage) {
-  final variantRead = ref.read(addEditVariantController);
-
-  final currentValue = int.tryParse(mileage);
-  if (currentValue == null) return 'Invalid mileage';
-  if (currentValue == 0) return 'Mileage can’t be zero';
-
-  final minValue = isMinMileage ? currentValue : int.tryParse(variantRead.mileageMinController.text);
-
-  final maxValue = isMinMileage ? int.tryParse(variantRead.mileageMaxController.text) : currentValue;
-
-  if (minValue == null || maxValue == null) {
-    showLog('null value min $minValue max $maxValue');
-    return null;
-  }
-
-  if (minValue > maxValue) {
-    return isMinMileage
-        ? 'Min Mileage can’t be greater than Max Mileage'
-        : 'Max Mileage can’t be smaller than Min Mileage';
-  }
-
-  return null;
 }
 
 

@@ -5,43 +5,335 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92c54782-8426-483f-b30b-c001fd16e089" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/framework/dependency_injection/inject.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/dependency_injection/modules/dio_api_client.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/dependency_injection/modules/dio_logger_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/api_end_points.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/api_result.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/dio/common_error_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/dio/dio_client.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/dio/dio_logger.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/dio/global_apis.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/dio/network_interceptor.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/network.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/provider/network/network_exceptions.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/contract/auth_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/model/forgot_password_request_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/model/login_request_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/model/login_response_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/model/reset_password_request_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/repository/auth/repository/auth_api_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/align_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/context_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/int_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/padding_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/string_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/time_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/form_validations.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/session.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/ui_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/web_helpers.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/web_view_ui/zoom_aware.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/web_view_ui/zoom_aware_mixin.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_ads.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_ads_sequence.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_ads_show_time.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_change_email_success.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_change_password_success.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_client.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_cms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_company.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_contact_us.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_dashboard.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_destination.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_destination_user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_device.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_error_403.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_error_404.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_error_json.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_faq.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_loader_blue.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_master.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_purchase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_purchase_transactions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_roles_and_permissions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_store.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_success.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_sucess.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_ticket.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_user_management.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/anim/anim_walllet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Instrument Sans/InstrumentSans-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Outfit/Outfit-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Roboto/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/2x/ic_access_denied.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/2x/ic_login_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/2x/ic_odigo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/3x/ic_access_denied.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/3x/ic_login_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/3x/ic_odigo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_access_denied.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_download_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_login_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_odigo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_uploaded_file_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lang/ar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lang/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/ar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/avg_duration.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/en.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/session_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/session_up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_about_drawer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_ad_drawer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_admin_name.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_agency.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_agency_registered.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_arrangeable_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_arrow_down_debit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_arrow_up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_arrow_up_credit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_backArrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_back_button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_back_button_without_bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_bell_circular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_black_right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_calender.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_calender_with_border.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_call_about.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_caution.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_change_password_dialog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_check_circle_rounded.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_check_circle_rounded_selected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_clear_search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_client.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_client_registered.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_close_import.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_close_notification_tile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_close_rounded.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_close_rounded_dialog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cloud_sync_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cms_aboutUs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cms_empty_state.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_contactUs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_copy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cross_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cross_icon_bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_cross_rounded.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dashboard_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dasher.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dasher_front_view.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dasher_latter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dasher_robo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_date.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_destination.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_destination_placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_device.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dialog_close_button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dislike.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_done_all.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_down_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_download_apk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_download_sample.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_drawer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_drop_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_chage_password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_company.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_status.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_edit_with_bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_email_id.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_email_with_background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_empty_checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_expand_history.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_export.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_faq_drawer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_file_resent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_file_upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filled_checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filled_right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filter_rounded.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_filters.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_foreground_notification_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_forward_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_forward_button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_general_support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_green.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_green_right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_grey_dot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_gst.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_heart_selected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_heart_unselected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_hidePassword.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_hide_password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_hourglass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_image_placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_import.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_import_file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_info2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_kody.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_kody_robots_logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_left_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_left_triangle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_like.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_location_center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_location_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_location_point_pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_login_background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_logout_square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_logout_transparent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_master.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_master_filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_master_store_registered.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_master_total_destination.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_mobile_number.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_more_info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_no_data.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_no_permission.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_appbar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_circular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_dashbaord.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_notification_web.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_odigo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_odigo_frame.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_odigo_frame2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_odigo_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_operator_name.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_package_master.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_password_hide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_password_unhide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_person.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_person_placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_phone_with_background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_plus_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_premium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_premium_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_profile_rounded.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_radio_selected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_radio_unselected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_red.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_reload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_right_arrow_icon_cupertino.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_right_arrow_with_black_background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_right_forgot_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_right_triangle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_robot_list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_robot_registered.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_roles_permission.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_destination.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_privacy_policy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_robot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_robot_grey.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_term_and_condition.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_rounded_user_grey.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_search_web.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_select_image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_selected_file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_setting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_setting_drawer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_settings_circular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_showPassword.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_show_password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_sidebar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_stock_manage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_store.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_switch_selected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_switch_unselected.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_three_vertical_dots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_ticket_management.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_toast_failure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_toast_success.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_total_robots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_update_image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_uplaoded_file_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_upload_image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_user1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_user_manage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_users.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_vert_dots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_view_details.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_voice_mic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_white_pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_white_right_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/total_session.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/routing/app_router.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/splash/splash.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/utils/widgets/common_dialogs.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/WeSpend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeSpend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/dependency_injection/inject.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/dependency_injection/modules/dio_api_client.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/dependency_injection/modules/dio_logger_module.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/api_end_points.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/api_result.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/dio/common_error_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/dio/dio_client.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/dio/dio_logger.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/dio/global_apis.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/dio/network_interceptor.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/network.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/provider/network/network_exceptions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/contract/auth_repository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/model/forgot_password_request_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/model/login_request_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/model/login_response_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/model/reset_password_request_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/repository/auth/repository/auth_api_repository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/align_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/context_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/int_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/padding_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/string_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/extension/time_extension.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/form_validations.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/session.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/ui_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/web_helpers.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/web_view_ui/zoom_aware.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/framework/utils/web_view_ui/zoom_aware_mixin.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +342,14 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DartProblemsView" scoped-analysis-mode="DartPackage" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +360,31 @@
     &quot;assignee&quot;: &quot;leesha19&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="sprint-1" />
+                    <option name="lastUsedInstant" value="1774101758" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1774101753" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/leesha19/wespend.git&quot;,
@@ -78,25 +403,44 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "sprint-1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/leeshavani/AndroidStudioProjects/wespend/lib",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sprint-1&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leeshavani/AndroidStudioProjects/wespend&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lib/ui/utils/widgets" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/ui/splash" />
+      <recent name="$PROJECT_DIR$/lib/ui" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,5 +452,27 @@
       <updated>1768634490660</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/framework/utils/session.dart</url>
+          <line>138</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/foundation.dart';
-
+import 'package:wespend/framework/utils/session.dart';
+import 'package:wespend/ui/utils/app_enums.dart';
+import 'package:wespend/ui/utils/theme/theme.dart';
 
 extension StringExtension on String {
   String get capsFirstLetterOfSentence => '${this[0].toUpperCase()}${substring(1)}';
@@ -214,28 +216,7 @@ extension StringExtension on String {
   }
 
 
-  Color getStatusColor(){
-    String  status = this;
-    final Color statusColor;
-    switch (status) {
-      case 'PENDING':
-        statusColor = AppColors.clrF79009;
-        break;
-      case 'REJECTED':
-        statusColor = AppColors.clrF04438;
-        break;
-      case 'ACTIVE':
-        statusColor = AppColors.clr12B76A;
-        break;
-      case 'INACTIVE':
-        statusColor = AppColors.clrF04438;
-        break;
-      default:
-        statusColor = AppColors.clr12B76A;
-        break;
-    }
-    return statusColor;
-  }
+
 }
 
 extension BoolExtension on bool? {

@@ -1,5 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
+import 'package:wespend/framework/dependency_injection/inject.config.dart';
 
 
 final getIt = GetIt.instance;
@@ -9,5 +10,8 @@ Future<void> configureMainDependencies({required String environment}) async => G
 
 abstract class Env {
   static const development = 'development';
-  static const List<String> environments = [Env.development];
+  static const kodyInfoTech = 'kodyInfoTech';
+  static const kodyRobots = 'kodyRobots';
+  static const falconTechRobotics = 'falconTechRobotics';
+  static const List<String> environments = [Env.development, Env.kodyInfoTech, Env.kodyRobots, Env.falconTechRobotics];
 }

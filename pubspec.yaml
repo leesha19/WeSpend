@@ -14,17 +14,47 @@ dependencies:
 
 
   cupertino_icons: ^1.0.8
-  flutter_riverpod: ^3.1.0
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
   easy_localization: ^3.0.8
   freezed_annotation: ^3.1.0
   json_annotation: ^4.9.0
   injectable: ^2.7.1+4
   get_it: ^9.2.0
   hive: ^2.2.3
+  hive_flutter: ^1.1.0
   dio: ^5.9.0
   flutter_svg: ^2.2.3
   cached_network_image: ^3.4.1
   html: ^0.15.6
+  http: ^1.5.0
+  http_parser: ^4.1.2
+  intl: ^0.20.0
+  mime: ^2.0.0
+  path: ^1.9.1
+  url_launcher: ^6.3.2
+  file_picker: ^10.3.2
+  image_picker: ^1.2.0
+  flutter_dropzone: ^4.2.1
+  html_editor_enhanced: ^2.7.0
+  responsive_builder: ^0.7.1
+  shimmer: ^3.0.0
+  lottie: ^3.3.1
+  loading_animation_widget: ^1.3.0
+  mobile_scanner: ^7.0.1
+  pin_code_fields: ^8.0.1
+  just_audio: ^0.10.5
+  video_player: ^2.10.0
+  table_calendar: ^3.2.0
+  calendar_date_picker2: ^2.0.1
+  dotted_border: ^3.0.1
+  dotted_line: ^3.2.3
+  easy_debounce: ^2.0.3
+  go_router: ^14.0.0
+
+
+
 
 
 
@@ -42,6 +72,7 @@ dev_dependencies:
   flutter_gen_runner: ^5.12.0
   lints: ^5.1.1
 
+
 flutter_gen:
   output: lib/ui/utils/theme
   integrations:
@@ -50,3 +81,10 @@ flutter_gen:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - assets/anim/
+    - assets/fonts/
+    - assets/svgs/
+    - assets/lang/
+    - assets/images/

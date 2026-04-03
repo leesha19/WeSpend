@@ -1,5 +1,16 @@
 import 'dart:convert';
-
+import 'package:wespend/framework/provider/network/dio/common_error_model.dart';
+import 'package:wespend/framework/provider/network/network.dart';
+import 'package:wespend/framework/utils/extension/string_extension.dart';
+import 'package:wespend/framework/utils/session.dart';
+import 'package:wespend/ui/routing/delegate.dart';
+import 'package:wespend/ui/routing/navigation_stack_item.dart';
+import 'package:wespend/ui/routing/stack.dart';
+import 'package:wespend/ui/utils/app_constants.dart';
+import 'package:wespend/ui/utils/theme/app_strings.g.dart';
+import 'package:wespend/ui/utils/widgets/common_dialogs.dart';
+import 'package:wespend/ui/utils/widgets/common_dialogs.dart';
+import 'package:wespend/ui/utils/theme/assets.gen.dart';
 
 bool enableLogoutDialog = true;
 
@@ -18,7 +29,7 @@ InterceptorsWrapper networkInterceptor() {
     },
     onResponse: (response, handler) {
       showLog('response.realUri.path>>>>${response.realUri.path}');
-      // List<String> whiteListAPIs = ['/country/export'];
+      List<String> whiteListAPIs = ['/country/export', '/odigo/package/wallet/transaction/export/list'];
       try {
         if ((!whiteListAPIs.contains(response.realUri.path)) && (response.data is Map || (response.data is String && response.data.toString().isNotEmpty))) {
           CommonErrorModel commonModel = CommonErrorModel.fromJson(jsonDecode(response.toString()));
@@ -87,7 +98,7 @@ InterceptorsWrapper networkInterceptor() {
                     }
 
                   },
-                  animation: Assets.anim.animErrorJson.keyName,
+                  animation: Assets.anim.animErrorJson,
                   successMessage:
                   commonModel.errorMessage == null ? (commonModel.message ?? '') : (commonModel.errorMessage ?? ''),
 
@@ -126,7 +137,7 @@ InterceptorsWrapper networkInterceptor() {
                         }
 
                       },
-                      animation: Assets.anim.animErrorJson.keyName,
+                      animation: Assets.anim.animErrorJson,
                       successMessage:errorMsg
                   );
 
@@ -155,7 +166,7 @@ InterceptorsWrapper networkInterceptor() {
                 {
                   Navigator.pop(globalNavigatorKey.currentContext!);
                 },
-                animation: Assets.anim.animErrorJson.keyName,
+                animation: Assets.anim.animErrorJson,
                 successMessage:errorMsg
             );
             handler.reject(error);
