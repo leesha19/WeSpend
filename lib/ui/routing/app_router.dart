@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:wespend/ui/auth/login.dart';
+import 'package:wespend/ui/auth/signUp.dart';
 import 'package:wespend/ui/splash/splash.dart';
 
 
@@ -14,9 +15,9 @@ final GoRouter appRouter = GoRouter(
       path: '/login',
       builder: (context, state) => const Login(),
     ),
-    // GoRoute(
-    //   path: '/home',
-    //   builder: (context, state) => const Dash(),
-    // ),
+    GoRoute(
+      path: '/signUp',
+      builder: (context, state) => const SignUp(),
+    ),
   ],
 );

@@ -12,6 +12,7 @@ class  AppColors {
   static const clr261861 = Color(0xFF261861);
   static const secondary = Color(0xFF9D7BF8);
   static const accent = Color(0xFFB99EFF);
+  static const cardColor = Color(0xFF1C1A2E);
 
   static const couple1 = Color(0xFFD45CEB);
   static const couple2 = Color(0xFFF08BFF);

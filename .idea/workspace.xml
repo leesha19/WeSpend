@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92c54782-8426-483f-b30b-c001fd16e089" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_dollar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_money.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/controller/auth/login_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/framework/utils/extension/screenutil_extension.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_couple_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_individual_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/utils/widgets/common_form_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WeSpend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeSpend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/svgs/svg_google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/framework/controller/auth/signUp_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signup_step_1.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signup_step_2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signup_step_3.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/signUp.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_couple_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_couple_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_individual_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/helper/signIn_individual_card.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/routing/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/routing/app_router.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/utils/theme/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/utils/theme/app_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/utils/theme/text_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/utils/theme/text_style.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/utils/widgets/common_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/utils/widgets/common_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/utils/widgets/common_text.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/utils/widgets/common_text.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,17 +125,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/ui/auth/helper" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lib/ui/utils/widgets" />
-      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/framework/controller/auth" />
+      <recent name="$PROJECT_DIR$/lib/ui/auth" />
+      <recent name="$PROJECT_DIR$/lib/ui/auth/helper" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/svgs" />
+      <recent name="$PROJECT_DIR$/assets/svgs" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/lib/ui/splash" />
       <recent name="$PROJECT_DIR$/lib/ui" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">

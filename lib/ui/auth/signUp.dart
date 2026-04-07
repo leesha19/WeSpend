@@ -12,14 +12,14 @@ import 'package:wespend/ui/utils/widgets/common_button.dart';
 import 'package:wespend/ui/utils/widgets/common_svg.dart';
 import 'package:wespend/ui/utils/widgets/common_text.dart';
 
-class Login extends ConsumerStatefulWidget {
-  const Login({super.key});
+class SignUp extends ConsumerStatefulWidget {
+  const SignUp({super.key});
 
   @override
-  ConsumerState createState() => _LoginState();
+  ConsumerState createState() => _SignUpState();
 }
 
-class _LoginState extends ConsumerState<Login> {
+class _SignUpState extends ConsumerState<SignUp> {
   @override
   Widget build(BuildContext context) {
     final loginWatch = ref.watch(loginController);
@@ -31,7 +31,7 @@ class _LoginState extends ConsumerState<Login> {
           // crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CommonSVG(strIcon: Assets.svgs.svgMoney.path,width: 50,),
+            CommonSVG(strIcon:  Assets.svgs.svgMoney.path,width: 50,),
             CommonText(title: "WeSpend",style: TextStyles.bold.copyWith(fontSize: 26.sp)),
             CommonText(title: "Smart Expense Tracking App",style: TextStyles.regular.copyWith(fontSize: 12.sp,color: AppColors.black838383)),
 
@@ -91,31 +91,10 @@ class _LoginState extends ConsumerState<Login> {
             ),
             // SizedBox(height: 20.w),
 
-            if(loginWatch.mode == false)
-              Container(
-                width: 300.w,
-                height: 100.h,
-                padding: EdgeInsets.all(4.w),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.05),
-                  borderRadius: BorderRadius.circular(14.r),
-                  // borderSide: BorderSide(
-                  //   color: Colors.white.withOpacity(0.12),
-                  // ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CommonText(title: "Each Partner will logs in separately",style: TextStyles.bold.copyWith(fontSize: 16.sp)),
-                    CommonText(title: "Use your own email & password.\nYour shared data syncs \nautomatically.",style: TextStyles.regular.copyWith(fontSize: 14.sp,color: AppColors.black838383)),
-
-                  ],
-                ).paddingSymmetric(horizontal: 10.w,vertical: 2.h),
-              ).paddingSymmetric(horizontal: 10.w,vertical: 2.h),
             ///sign-in and sign-up card
             SizedBox(height: 20.w),
 
-            SigninIndividualCard()
+            SignUpForm()
           ],
         ),
       ),
